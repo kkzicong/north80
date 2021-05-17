@@ -6,13 +6,57 @@
  * Made By MaterializeCSS.com
  */
 
+/* banner */
+/* .banner {
+  max-height: 500px;
+} */
+
+.banner.row, .banner .row, .banner .col {
+  margin: 0;
+  padding: 0;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .banner.row {
+    height: 500px;
+  }
+  .banner .row {
+    height: 250px;
+  }
+  .banner-image-left {
+    height: 500px;
+  }
+  .banner-image-right {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-image-left {
+    max-height: 360px;
+  }
+  .banner-left {
+    max-height: 360px;
+  }
+  .banner .row {
+    max-height: 230px;
+  }
+  .banner-image-right {
+    max-height: 230px;
+  }
+}
+
 /* Nav bar */
-.transparent-nav {
+nav {
   background-color: rgba(0,0,0,0);
 }
 nav ul a,
 nav .brand-logo {
-  color: #b2dfdb;
+  color: #004d40;
   font-weight: 500;
   letter-spacing: .1em;
 }
@@ -23,11 +67,20 @@ nav ul a {
 /* Mobile sidenav*/
 .sidenav-trigger {
   /* color: #26a69a; */
-  color: #b2dfdb;
+  color: #004d40;
 }
 
 p {
   line-height: 2rem;
+}
+
+h4, h5 {
+  color: #004d40;
+}
+
+.message {
+  margin-top: 150px;
+  margin-bottom: 80px;
 }
 
 .parallax-container {
