@@ -1,0 +1,99 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* Nav bar */
+.transparent-nav {
+  background-color: rgba(0,0,0,0);
+}
+nav ul a,
+nav .brand-logo {
+  color: #b2dfdb;
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+nav ul a {
+  font-size: 1.2em;
+}
+
+/* Mobile sidenav*/
+.sidenav-trigger {
+  /* color: #26a69a; */
+  color: #b2dfdb;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+#index-banner {
+  min-height: 420px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+/* Google map */
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Age verification modal */
+.modal {
+  top: 30% !important;
+  max-width: 35em;
+}
+
+.modal-close.red-text {
+  margin-right: 2px !important;
+}
+
+.social-icon {
+  margin-top: 2px !important;
+  margin-right: 5px !important;
+}
+
+.social-button {
+  color: #004d40;
+}
