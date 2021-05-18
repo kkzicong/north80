@@ -6,11 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
-/* banner */
-/* .banner {
-  max-height: 500px;
-} */
+body {
+  color: #3b5f40;
+}
 
+/* Hero banner */
 .banner.row, .banner .row, .banner .col {
   margin: 0;
   padding: 0;
@@ -63,24 +63,24 @@ nav .brand-logo {
 nav ul a {
   font-size: 1.2em;
 }
+.brand-logo img {
+  width: auto;
+  height: 64px;
+}
 
 /* Mobile sidenav*/
 .sidenav-trigger {
-  /* color: #26a69a; */
-  color: #004d40;
+  color: #3b5f40;
 }
 
 p {
   line-height: 2rem;
 }
 
-h4, h5 {
-  color: #004d40;
-}
-
+/* Message section */
 .message {
-  margin-top: 150px;
-  margin-bottom: 80px;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .parallax-container {
