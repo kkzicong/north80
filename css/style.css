@@ -10,46 +10,6 @@ body {
   color: #3b5f40;
 }
 
-/* Hero banner */
-.banner.row, .banner .row, .banner .col {
-  margin: 0;
-  padding: 0;
-}
-.banner img {
-  object-fit: cover;
-  width: 100%;
-}
-
-@media screen and (min-width: 600px) {
-  .banner.row {
-    height: 600px;
-  }
-  .banner .row {
-    height: 300px;
-  }
-  .banner-image-left {
-    height: 600px;
-  }
-  .banner-image-right {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .banner-image-left {
-    max-height: 360px;
-  }
-  .banner-left {
-    max-height: 360px;
-  }
-  .banner .row {
-    max-height: 230px;
-  }
-  .banner-image-right {
-    max-height: 230px;
-  }
-}
-
 /* Nav bar */
 nav {
   background-color: rgba(0,0,0,0);
@@ -73,14 +33,42 @@ nav ul a {
   color: #3b5f40;
 }
 
+/* Hero banner */
+#hero-banner {
+  max-height: 500px;
+}
+#hero-icon {
+  width: 400px;
+  max-height: 300px;
+}
+#hero-banner .row {
+  margin: 0;
+  background-color: rgba(8,61,37,0.3);
+}
+
 p {
   line-height: 2rem;
 }
 
 /* Message section */
-.message {
-  margin-top: 120px;
-  margin-bottom: 100px;
+.banner {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+.banner-row {
+  height: 400px;
+}
+.banner-row .col {
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 250px;
+  }
+  .banner-row {
+    height: 250px;
+  }
 }
 
 .parallax-container {
@@ -91,25 +79,6 @@ p {
 }
 .parallax-container .section {
   width: 100%;
-}
-#index-banner {
-  min-height: 420px;
-}
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
 }
 
 /* Google map */
